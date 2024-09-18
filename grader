@@ -1,0 +1,20 @@
+sscore = float(int(input("Enter Students score: ")))
+ascore = float(int(input("Enter Assignments point worth: ")))
+
+percent = (sscore / ascore) * 100
+round(percent,2)
+
+if percent >= 0 and percent <= 50:
+    print("This Student gets an F with a "+str(round(percent,2))+"%"" on the Assignment")
+    
+elif percent >= 51 and percent <= 60:
+    print("This Student gets an D with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 61 and percent <= 75:
+    print("This Student gets an C with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 76 and percent <= 88:
+    print("This Student gets an B with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 89 and percent >= 100:
+    print("This Student gets an A with a "+str(round(percent,2))+"%"" on the Assignment")
