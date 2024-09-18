@@ -34,12 +34,16 @@ elif percent >= 61 and percent <= 75:
     print("C's get degrees! =)")
 if typea == "test" or typea == "quiz":
     if percent >= passing:
-        print("Your Student Passed! =)")
+        print("Your Student Passed! =) with")
+        print(str(round(percent,2)) + "%")
     elif percent < passing:
         print("Your Student did not pass. =(")
+        print(str(round(percent,2)) + "%")
 if typea == "worksheet":
     if percent < passing:
         print("Your Student Failed the Worksheet =(")
+        print(str(round(percent,2)) + "%")
     elif percent >= passing:
         print("Your Student did well on the Worksheet! =)")
+        print(str(round(percent,2)) + "%")
     
