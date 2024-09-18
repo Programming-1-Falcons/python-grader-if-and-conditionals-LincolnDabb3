@@ -1,0 +1,45 @@
+sscore = float(int(input("Enter Students score: ")))
+ascore = float(int(input("Enter Assignments point worth: ")))
+typea = input("What type of assignment is this(test, quiz, worksheet)?: ")
+passing = float(int(input("Enter the Passing percentage: ")))
+
+round(passing, 2)
+percent = (sscore / ascore) * 100
+round(percent,2)
+
+if percent >= 0 and percent <= 50:
+    print("This Student gets an F with a "+str(round(percent,2))+"%"" on the Assignment")
+    
+elif percent >= 51 and percent <= 60:
+    print("This Student gets an D with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 61 and percent <= 75:
+    print("This Student gets an C with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 76 and percent <= 88:
+    print("This Student gets an B with a "+str(round(percent,2))+"%"" on the Assignment")
+
+elif percent >= 89 and percent >= 100:
+    print("This Student gets an A with a "+str(round(percent,2))+"%"" on the Assignment")
+
+if percent == 100:
+    print("Your Student got a perfect score! =)")
+if percent > 100:
+    print("Your Student got extra credit! =)")
+elif percent < 51:
+    print("Your Student needs to review this or needs help understanding.")
+elif percent >= 51 and percent <=60:
+    print("Your Student needs to go over this")
+elif percent >= 61 and percent <= 75:
+    print("C's get degrees! =)")
+if typea == "test" or typea == "quiz":
+    if percent >= passing:
+        print("Your Student Passed! =)")
+    elif percent < passing:
+        print("Your Student did not pass. =(")
+if typea == "worksheet":
+    if percent < passing:
+        print("Your Student Failed the Worksheet =(")
+    elif percent >= passing:
+        print("Your Student did well on the Worksheet! =)")
+    
